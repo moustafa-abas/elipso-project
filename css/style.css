@@ -1,0 +1,377 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+:root { 
+    --main-color:
+linear-gradient(to right top, #7613f2, #6e33ec, #6844e5, #6551dd, #655cd3, #635acb, #6158c4, #5f56bc, #5948b6, #5538ae, #5127a7, #4e0e9e);
+    --text-color:#5d388b;
+    --main-transition:all .5s;
+}
+
+.button  {
+    width: 10rem;
+    height: 2.7rem;
+    border-radius: .7rem;
+    background-image: var(--main-color);
+    border: none;
+    color: white;
+    transition: var(--main-transition);
+    position: relative;
+    left: 2rem;
+}
+
+
+.button:hover {
+
+border-radius: 3rem;
+
+}
+.btn {
+    transition: all .5s;
+    border: none;
+    transition: var(--main-transition);
+
+}
+.btn:hover {
+    width: 10rem;
+    height: 2.7rem;
+    border-radius: 3rem;
+    background-image: var(--main-color);
+    border: none;
+    color: white;
+
+    
+}
+    .home {
+    background-image: url(/images/pexels-bich-tran-669996.jpg) !important ;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+}
+.home::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:var(--main-color);
+    opacity: .3;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+}
+.navbar img {
+    width: 5rem;
+}
+span {
+    color: var(--text-color);
+}
+.nav-link::before {
+    content: "";
+    width:0;
+    height: .3rem;
+    left: .2rem;
+    position: absolute;
+    top: -1rem;
+    transition: var(--main-transition);
+    background-image: var(--main-color);
+}
+.navbar li:hover .nav-link::before {
+    width: 100%;
+}
+
+.navbar li:hover a{
+    color: var(--text-color);
+    font-weight: bold;
+}
+.navbar input {
+    width: 20rem!important;
+    border-radius: 5rem;
+}
+.navbar  i {
+    right: 3rem;
+    top: .4rem;
+    
+}
+.navbar i:hover{
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------- */
+
+.txt {
+    top: 50%;
+}
+
+.carousel-indicators .active {
+    background-image: var(--main-color)
+}
+
+/* --------------------------------------------------------------------- */
+
+.cards .card {
+    box-shadow: -15px -15px 5px gray  ;
+    width: 47%;
+}
+.card i:not(.arrow) {
+    font-size: 3rem;
+    padding-bottom: .7rem;
+    color: var(--text-color);
+}
+
+.card:hover  {
+    background-image: var(--main-color);
+    transform: translatey(-20px);
+    box-shadow: 15px 15px 5px gray ;
+    color: white;
+    font-weight: 600;
+}
+
+.card h5 {
+    color:var(--text-color);
+    text-transform: capitalize;
+}
+.text p {
+    color: gray;
+}
+
+/* ---------------------------------------------------------- */
+
+
+.prop {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/pexels-cottonbro-studio-4069289.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    
+}
+.prop .txt {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+
+}
+.prop i  {
+    color: var(--text-color);
+    font-size: 4rem;
+    
+}
+.prop .txt h2 {
+color: var(--text-color);
+}
+
+/* ---------------------------------------- */
+.number {
+bottom: -90%;    
+}
+.number .only-one {
+    background-color: white;
+    padding: .8rem;
+    border-radius: 1rem;
+    box-shadow: -5px -10px 10px gray ;
+    border: 1px solid gray;
+
+}
+
+.number .only-one span {
+    color: var(--text-color);
+    position: relative;
+    font-size: 2rem;
+    
+
+}
+.number .only-one span::after {
+    content: "";
+    width: 6rem;
+    height: .2rem;
+    background-image: var(--main-color);
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+}
+.number .only-one  h4 {
+    color: var(--text-color);
+    margin-top: 2rem;
+}
+
+/* ----------------------------------------- */
+.x {
+    margin-top: 15%;
+}
+.x .txt h4 {
+    color: var(--text-color);
+    margin: 2rem 0;
+}
+
+.x .image1 img {
+    
+    border-top-left-radius: 15rem;
+    border-bottom-left-radius:15rem ;
+    border-top-right-radius:10rem ;
+    border-bottom-right-radius:5rem ;
+}
+.x .image2 img {
+    border-top-right-radius: 15rem;
+    border-bottom-right-radius:15rem ;
+    border-top-left-radius:10rem;
+    border-bottom-left-radius:5rem ;
+} 
+
+/* --------------------------------------------------------- */
+
+.bg {
+    background-image: url(/images/pexels-kabita-darlami-18168288.jpg) ;
+    background-size: cover;
+    background-position: center; 
+
+}
+.bg h4 ,
+h5
+{
+    color: var(--text-color);
+}
+
+
+.bg .carousel-item img{
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+.bg .carousel-indicators{
+    bottom: -20%;
+}
+
+
+
+/* -------------------------------------------------- */
+
+.items .item{
+    width: calc(100%/3);
+    padding: .2rem 1rem;
+    transition: var(--main-transition);
+    border-radius: 1rem;
+}
+.item i {
+        color: var(--text-color);
+        font-size: 2rem;
+        margin: 1.5rem 0;
+
+}
+.item h5 {
+    color: var(--text-color);
+    margin: 0 0 1rem ;
+}
+.item p {
+    color: rgb(83, 82, 82);
+}
+.item:hover{
+transform: translatey(-1rem);
+box-shadow: -5px  -5px 20px var(--text-color) inset;
+}
+
+/* ---------------------------------------------------------- */
+
+
+.contact {
+    background-color: rgba(128, 128, 128, 0.193);
+    height: 5rem;
+    
+}
+.contact span{
+    color: var(--text-color);
+}
+
+/* --------------------------------------------------------- */
+
+
+.join .image img {
+    position: absolute;
+    left: 0;
+    border-top-right-radius:15rem ;
+    border-bottom-right-radius: 15rem;
+}
+
+.join .text h4 {
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+/* --------------------------------------------------- */
+
+.support{
+    margin-top: 10rem;
+}
+.support .icon {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+.support h4 {
+color: var(--text-color);
+}
+
+/* ------------------------------------------------------ */
+
+
+.sub {
+    background-image: var(--main-color);
+    border-radius: 1rem;
+}
+
+.sub .btn{
+
+    transition: var(--main-transition);
+    position: absolute;
+    right: 3rem;
+    border-right: 3px solid var(--text-color);
+    border-radius: 3rem;
+
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+.footer .logo img{
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+.footer .logo::after {
+    content: "";
+    width:8rem;
+    height: .3rem;
+    background-image: var(--main-color);
+    position: absolute;
+}
+
+.footer h4 {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+.footer .links p:hover,
+.team p:hover {
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.footer i {
+    color: var(--text-color);
+}
+.contact-info p:last-of-type:hover {
+    cursor: pointer;
+    color: #1a5cb8;
+}
